@@ -13,9 +13,9 @@
     <div class="div">
         <div class="button-div">
             <!-- <button style="background-color: green; cursor: crosshair;" ></button> -->
-            <button id="button" onclick="alert('Bien ahi!!')">Click me</button>
+            <button class="fly-bttn" id="button" onclick="alert('Bien ahi!!')">Click me</button>
         </div>
-
+        
         <div class="div-editable">
             <style contenteditable="true" class="style-editable">
                 .style-editable{
@@ -25,7 +25,6 @@
                 }
             </style>
         </div>
-
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <div class="botones-div">
             <div class="switch-holder">
@@ -63,9 +62,11 @@
                     <span class="tooltip-twitch">Twitch</span>
                 </div>
             </div>
-
             <div class="rb">
                 <button class="rb-bttn">Rainbow Button</button>
+                <div class="rb-bttn2">
+                    <button>Rainbow Button 2</button>
+                </div>
             </div>
 
             <div>
@@ -76,9 +77,10 @@
                     </summary>
                     <p>Definitivamente es una pregunta</p>
                 </details>
+                <br>
                 <p>
                     Ejemplo de <abbr title="abreviatura">abbr</abbr> <br>
-                    Excelente para esconder texto
+                    (Excelente para esconder texto)
                 </p>
             </div>
         </div>
@@ -92,6 +94,73 @@
                 <li><a href="#" data-text="Extras">Extras</a></li>
                 <li><a href="#" data-text="Contact">Contact</a></li>
             </ul>
+        </div>
+
+        <div class="border-radius">
+            <div class="border-radius-ejemplos">
+                <div class="border-radius-texto">
+                    <p>border-radius: 32px;</p>
+                    <p>All corners 32px</p>
+                </div>
+                <div class="cuadrado">
+                    <div style="border-radius: 32px;"></div>
+                </div>
+            </div>
+
+            <div class="border-radius-ejemplos">
+                <div class="border-radius-texto">
+                    <p>border-radius: 32px 64px;</p>
+                    <p>top-left & bottom-right 32px <br>
+                        bottom-left & top-right 64px</p>
+                </div>
+                <div class="cuadrado">
+                    <div style="border-radius: 32px 64px;"></div>
+                </div>
+            </div>
+
+            <div class="border-radius-ejemplos">
+                <div class="border-radius-texto">
+                    <p>border-radius: 64px 96px 128px 32px;</p>
+                    <p>top-left & top-right & <br>
+                        bottom-right & bottom-left</p>
+                </div>
+                <div class="cuadrado">
+                    <div style="border-radius: 64px 96px 128px 32px;"></div>
+                </div>
+            </div>
+
+            <div class="border-radius-ejemplos">
+                <div class="border-radius-texto">
+                    <p>border-radius: 50%;</p>
+                    <p>ellipse for rectangle <br>
+                        circle for square</p>
+                </div>
+                <div class="cuadrado">
+                    <div style="border-radius: 50%;"></div>
+                </div>
+            </div>
+
+            <div class="border-radius-ejemplos">
+                <div class="border-radius-texto">
+                    <p>border-radius: 40% 20% / 10% 30%;</p>
+                    <p>first level radius / <br>
+                        radius for elliptic corners</p>
+                </div>
+                <div class="cuadrado">
+                    <div style="border-radius: 40% 20% / 10% 30%;"></div>
+                </div>
+            </div>
+
+            <div class="border-radius-ejemplos">
+                <div class="border-radius-texto">
+                    <p>border-radius: 32px 15% / <br> 16px 32px 48px 64px;</p>
+                    <p>first level radius / <br>
+                        every corner defined</p>
+                </div>
+                <div class="cuadrado">
+                    <div style="border-radius: 32px 15% / 16px 32px 48px 64px;"></div>
+                </div>
+            </div>
         </div>
 
 
