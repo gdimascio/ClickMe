@@ -59,3 +59,34 @@ window.addEventListener("blur", () => {
 window.addEventListener("focus", () => {
     document.title = docTitle;
 })
+
+// --------------------------------------------------------------------------------------------//
+
+const poolBgs = document.querySelectorAll('.pool-bg');
+
+poolBgs.forEach(poolBg => {
+    const ripple = poolBg.querySelector('.ripple');
+    const img = poolBg.querySelector('img');
+
+
+    img.addEventListener('mouseenter', () => {
+        ripple.style.top = `${Event.offsetY}px`;
+        ripple.style.left = `${Event.offsetX}px`;
+        ripple.classList.add('active');
+    });
+
+    img.addEventListener('mouseleave', () => {
+        ripple.classList.remove('active');
+    });
+
+    setInterval(() => {
+        const newRipple = document.createElement('div');
+        newRipple.classList.add('ripple');
+        poolBg.appendChild(newRipple);
+        
+        setTimeout(() => {
+            newRipple.remove();
+        }, 1000);
+    }, 1000);
+
+});

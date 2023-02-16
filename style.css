@@ -376,4 +376,30 @@
     border-radius: 9px;
 }
 
-
+.pool-bg{
+    position: relative;
+    display: inline-block;
+    /* background: url(./pool/pool.png);
+    background-size: cover;
+    width: 100%; */
+}
+.pool-bg > img{
+    display: block;
+    width: 100%;
+}
+.ripple{
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    animation: rippleEffect 1s linear infinite;
+}
+@keyframes rippleEffect {
+    from {
+        transform: scale(0);
+        opacity: 100;
+    }
+    to {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
