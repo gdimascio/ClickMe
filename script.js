@@ -1,4 +1,6 @@
 
+
+// --------------------------------------------------------------------------------------------//
 // calculate the distance between the cursor and the button
 function distCurs(buttonRect){
     return Math.sqrt(
@@ -48,3 +50,12 @@ document.addEventListener('mousemove', (event) => {
     }
 
 });
+
+// --------------------------------------------------------------------------------------------//
+let docTitle = document.title;
+window.addEventListener("blur", () => {
+    document.title = "CAMBIO DE PESTAÑA";
+})
+window.addEventListener("focus", () => {
+    document.title = docTitle;
+})
